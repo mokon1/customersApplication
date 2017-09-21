@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Customers Application</title>
+    <link rel="stylesheet" href ="css/style.css">
 </head>
 <body>
     
@@ -40,7 +41,7 @@
 
         mysql_query($sql,$host); //create table    
 
-        header('Location:customers.php');
+        header('Location:newCustomers.php');
 
     ?>
     

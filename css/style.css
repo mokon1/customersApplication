@@ -1,0 +1,47 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.removed{
+    color: blue;
+}
+fieldset{
+    padding: 20px;
+    width: 50vw;
+}
+label{
+    display: block;
+    color: blue;
+}
+p{
+    color: blue;
+}
+input, textarea{
+    display: block;
+    width: 80%;
+    margin-top: 5px;
+}
+input[type="submit"]{
+    margin-top: 20px;
+    background-color:tan;
+    padding: 5px;
+    font-weight: bold;
+}
+table.list{
+    margin-top: 25px;
+    width: 80vw;
+}
+table, tr, th, td{
+    border: 1px solid black;
+}
+th{
+    background-color: aliceblue;
+}
+td{
+    width: 11%;
+}
+.deleteBtn{
+    background-color: red;
+    text-align: center;
+}
+    
