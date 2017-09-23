@@ -24,20 +24,20 @@
             echo "database exists ";
         }
 
-        //create table
-        mysql_select_db("customersdatabase", $host);
+        mysql_select_db("customersdatabase", $host); //active database on the server
+        
         $sql = "CREATE TABLE `customers`(
-                    `id` INT AUTO_INCREMENT,
-                    `name` TEXT,
-                    `mail` TEXT,
-                    `phone` INT,
-                    `product` TEXT,
-                    `service` TEXT,
-                    `price` FLOAT,
-                    `date` DATE,
-                    `comment` TEXT,
-                    PRIMARY KEY(`id`)
-            )";
+            `id` INT AUTO_INCREMENT,
+            `name` TEXT,
+            `mail` TEXT,
+            `phone` INT,
+            `product` TEXT,
+            `service` TEXT,
+            `price` FLOAT,
+            `date` DATE,
+            `comment` TEXT,
+            PRIMARY KEY(`id`)
+        )";
 
         mysql_query($sql,$host); //create table    
 
