@@ -8,7 +8,7 @@
 <body>
     <div class="button"><a href="newCustomers.php">ADD CUSTOMER</a></div><br>
     <form>
-        <fieldset id="searchCustomer">
+        <fieldset id="searchTool">
             <label> Type name or mail:
                 <input type="text" id="findCustomer" placeholder="Search for names or mail.." title="name or mail">
             </label>
@@ -38,7 +38,7 @@
             </tr>';
         while($row = mysql_fetch_array($result)) {
              echo "<tr>
-                <td class='row'>{$row['id']}</td>
+                <td>{$row['id']}</td>
                 <td>{$row['name']}</td>
                 <td>{$row['mail']}</td>
                 <td>{$row['phone']}</td>

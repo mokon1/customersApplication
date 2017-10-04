@@ -8,7 +8,7 @@
 <body>
     
     <?php
-        require("connect.php");
+        require("connection.php");
     
     
         if (!($host) ) {

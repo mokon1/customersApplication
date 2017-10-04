@@ -2,12 +2,17 @@
     margin: 0 auto;
     padding: 0;
 }
-.removed{
-    color: blue;
-}
 fieldset{
     padding: 20px;
     width: 50vw;
+}
+h2{
+    text-align: center;
+    margin-top: 20px;
+    background-color: lightgrey;
+}
+hr{
+    margin: 20px 0;
 }
 label{
     display: block;
@@ -44,4 +49,18 @@ td{
     background-color: red;
     text-align: center;
 }
-    
+.button{
+    width: 100%;
+    background-color: bisque;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+#searchTool{
+    width: 75vw;
+    background-color: lightgrey;
+}
+#searchCustomer label{
+    color: black;
+}
