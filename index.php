@@ -30,7 +30,7 @@
             `id` INT AUTO_INCREMENT,
             `name` TEXT,
             `mail` TEXT,
-            `phone` INT,
+            `phone` VARCHAR,
             `product` TEXT,
             `service` TEXT,
             `price` FLOAT,
@@ -44,6 +44,6 @@
         header('Location:newCustomers.php');
 
     ?>
-    
+    <!-- `phone` is VARCHAR in order to save correct number (not set: 2147483647) -->
 </body>
 </html>

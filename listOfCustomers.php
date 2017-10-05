@@ -47,7 +47,6 @@
                 <td>{$row['price']}</td>
                 <td>{$row['date']}</td>
                 <td>{$row['comment']}</td>
-                <td class='deleted'>DELETE</td>
             </tr>";
         }
         echo '</table>';
