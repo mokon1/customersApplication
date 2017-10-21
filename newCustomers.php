@@ -8,7 +8,7 @@
 <body>
      <form class="list" method="POST" action="send.php">
          <fieldset>
-             <h2 class="header">Our Customers:</h2>
+             <h2 class="header">New Customer:</h2>
              <hr>
              <label>Name:<input type="text" name="name" id="name"></label>
              <label>Mail:<input type="email" name="mail" id="email"/></label>
@@ -17,8 +17,8 @@
              <p>Service:</p><textarea name="service" cols="20" rows="5"></textarea>
              <label>Price:<input type="number" name="price"/></label>
              <label>Date:<input type="date" name="date" id="date"/></label>
-             <p>Comment:</p><textarea name="comment" rows="5"></textarea>
-             <input type="submit" name="newCustomer" value="ADD NEW CUSTOMERS"/>
+             <p>Comment:</p><textarea name="comment" rows="5" cols="20"></textarea>
+             <input type="submit" name="newCustomer" value="ADD NEW CUSTOMER"/>
          </fieldset>
     </form>
    <a href="listOfCustomers.php"><input type="submit" name="customers" value="ALL CUSTOMERS"/></a>
@@ -27,7 +27,7 @@
         require("connection.php");
         $result = mysql_query('SELECT * FROM customers ORDER BY date DESC LIMIT 3');
         
-        echo '<h2>The last 3 customers (order by date)</h2>';
+        echo '<h2>The last 3 customers</h2>';
         echo '<table class="list">
             <tr>
                 <th>Id</th>

@@ -11,6 +11,9 @@ h2{
     margin-top: 20px;
     background-color: lightgrey;
 }
+.header{
+    margin: 0;
+}
 hr{
     margin: 20px 0;
 }
@@ -25,6 +28,9 @@ input, textarea{
     display: block;
     width: 80%;
     margin-top: 5px;
+}
+textarea{
+    resize: horizontal;
 }
 input[type="submit"]{
     margin-top: 20px;
@@ -63,7 +69,4 @@ td{
 }
 #searchCustomer label{
     color: black;
-}
-.header{
-    margin: 0;
 }
